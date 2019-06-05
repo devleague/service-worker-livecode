@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h1>
+        Service Worker Push Notification Example
+      </h1>
+    </div>
+
+    <div class="content">
+      Push Notification allows messages to be sent from a server to a client page (this page). Please visit this url
+      first and generate a Public Key: <a href="https://web-push-codelab.glitch.me/">Web Push Companion</a>. Then update
+      this "/js/push-notification.js" file with your own application server public key. Then click on the "Enable Push
+      Messaging" button after this page is reloaded. This will generate a subscription object. Copy that subscription
+      object and paste it in the "Subscription to Send To" section of the Companion site. This will now allow you to
+      send messages to the client page from the Companion site.
+    </div>
+
+    <div id="registered" class="content hidden">
+      The service worker has been registered which means all the static files have been cached beforehand.
+    </div>
+
+    <div id="push-notification" class="content push-btn">
+      <button id="pushButton">Enable Push Notification</button>
+      <div class="js-subscription-json"></div>
+      <div class="js-subscription-details"></div>
+    </div>
+
+    <div id="links" class="content">
+      Links to other things you can do with Service Workers:
+
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/runtime-caching.html">Runtime Caching</a>
+        </li>
+        <li>
+          <a href="/background-sync.html">Background Sync</a>
+        </li>
+        <li>
+          <a href="/messaging.html">Messaging</a>
+        </li>
+        <li>
+          <a href="/push-notification.html">Push Notification</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="js/push-notification.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="center">
+      <h1>
+        Service Worker Background Sync Example
+      </h1>
+    </div>
+
+    <div class="content">
+      Background sync allows HTTP requests to be queued in the background in situations where network in not available.
+    </div>
+
+    <div id="registered" class="content hidden">
+      The service worker has been registered which means all the static files have been cached beforehand.
+    </div>
+
+    <div id="background" class="content">
+      The form below will take the user input and set that value into indexedDB. Then it will send an event to the
+      service worker to trigger a background POST request to our server when there's a network available. Things to
+      notice: The indexedDB section of the "Application" tab in Chrome Dev Tools should have an entry for
+      "bg-input-key", if there's no network, a request was not sent out in the "Network" tab, and finally once a network
+      connection is restored, a POST request will be made to our server with the user input as the body.
+
+      <div class="bg-sync">
+        <input type="text" id="bg-input" />
+        <button id="bg-sync">Background Sync</button>
+      </div>
+    </div>
+
+    <div id="links" class="content">
+      Links to other things you can do with Service Workers:
+
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/runtime-caching.html">Runtime Caching</a>
+        </li>
+        <li>
+          <a href="/background-sync.html">Background Sync</a>
+        </li>
+        <li>
+          <a href="/messaging.html">Messaging</a>
+        </li>
+        <li>
+          <a href="/push-notification.html">Push Notification</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="js/background-sync.js" type="text/javascript"></script>
+  </body>
+</html>

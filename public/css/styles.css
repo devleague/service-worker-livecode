@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.center {
+  text-align: center;
+}
+
+.content {
+  max-width: 980px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#registered {
+  margin: 15px auto 0;
+}
+
+#links {
+  margin-top: 15px;
+}
+
+#runtime-cache {
+  margin: 15px auto 0;
+}
+
+#fetched {
+  padding: 20px;
+  background-color: #eee;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#background {
+  margin: 25px auto;
+}
+
+#background .bg-sync {
+  margin-top: 15px;
+}
+
+#messages {
+  margin: 25px auto;
+}
+
+#push-notification {
+  margin: 25px auto;
+}
