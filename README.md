@@ -1,3 +1,9 @@
-### Launching Live-server with a proxy
+## Service Workers
 
-`live-server --proxy=/api:http://localhost:8081/api`
+List of features covered:
+
+- Precaching
+- Runtime Caching
+- Background Sync
+- Messaging
+- Push Notifications
