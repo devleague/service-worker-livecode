@@ -97,7 +97,7 @@ bgSyncButton.addEventListener('click', (e) => {
         });
       })
       .then((contents) => {
-        console.log(`Inserted value ${contents[0].value} into IndexedDB`);
+        console.log(`Inserted value ${contents[0].body} into IndexedDB`);
       })
       // send event to service worker to trigger a background sync
       .then(() => {

@@ -76,7 +76,7 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch((err) => {
-          const cacheKey = 'adsf'; // event.request
+          const cacheKey = event.request;
           return caches.match(cacheKey).then((response) => {
             // Cache hit - return response
             if (response) {
